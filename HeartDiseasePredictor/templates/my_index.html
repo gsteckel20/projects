@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Heart Hisease Predictor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/my_style.css">
+    </head>
+    <body>
+        <div class="header">
+            <header>
+                <h2>Heart Disease Predictor</h2>
+            </header>
+        </div>
+        <div class="form">
+            <form action="/submit" method="post">
+                <label for="text">Age:</label>
+                <input type="text" name="age"><br>
+                <label for="text">Sex (1 = Male; 0 = Female):</label>
+                <input type="text" name="sex"><br>
+                <label for="text">Chest pain type<br>1 = typical angina
+                    <br>2 = atypical angina
+                    <br>3 = non-anginal pain
+                    <br> 4 = asymptomatic:</label>
+                <input type="text" name="cp"><br>
+                <label for="text">Resting Blood Pressure in mm Hg:</label>
+                <input type="text" name="trestbps"><br>
+                <label for="text">Serum Cholestoral in mg/dl</label>
+                <input type="text" name="chol"><br>
+                <label for="text">Fasting Blood Sugar > 120 mg/dl (1 = true; 0 = false)</label>
+                <input type="text" name="fbs"><br>
+                <label for="text">Resting Electrocardiographic Results<br>
+                    0 = normal<br>
+                    1 = having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)<br>
+                    2 = showing probable or definite left ventricular hypertrophy by Estes' criteria:</label>
+                <input type="text" name="restecg"><br>
+                <label for="text">Maximum Heart Rate Achieved:</label>
+                <input type="text" name="thalach"><br>
+                <label for="text">Exercise Induced Angina (1 = yes; 0 = no):</label>
+                <input type="text" name="exang"><br>
+                <label for="text">ST Depression Induced by Exercise Relative to Rest</label>
+                <input type="text" name="oldpeak"><br>
+                <label for="text">Slope of the Peak Exercise ST Segment<br>
+                    1 = upsloping<br>
+                    2 = flat<br>
+                    3 = down sloping:</label>
+                <input type="text" name="slope"><br>
+                <label for="text">Number of Major Vessels (0-3) Colored by Fluoroscopy: </label>
+                <input type="text" name="ca"><br>
+                <label for="text">Thal<br>
+                    3 = normal<br>
+                    6 = fixed defect<br>
+                    7 = reversable defect:</label>
+                <input type="text" name="thal"><br>
+                <input type="submit">
+            </form>
+            <form action="/accuracy" method="post">
+                <input type="submit" value="Accuracy">
+            </form>
+            <div class="item-1">
+                Diagnosis of Heart Disease: {{Diagnosis}}<br>
+            </div>
+        </div>
+        <footer>
+            Greg Steckel
+        </footer>
+    </body>
+</html>

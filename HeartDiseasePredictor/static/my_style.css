@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(248, 162, 101);
+}
+
+header {
+    display: grid;
+    padding: 5px;
+    background-color: bisque;
+    text-align: center;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+}
+
+form {
+    padding: 5px;
+}
+
+h2{
+    color: rgb(248, 162, 101);
+}
+
+.item-1{
+    padding: 5px;
+    border-style: dotted;
+    border-color: black;
+    text-align: center;
+    background-color: bisque;
+}
